@@ -47,7 +47,7 @@ int main( int argc, char **argv )
 		k.comment( "the following is a badly named single string carrier:" );
 		try
 		{
-			k.knit( "+", "f10", "[1,2]" ); //invalid carrier name
+			k.knit( "+", "f10", "1,2" ); //invalid carrier name
 		}
 		catch( std::exception &e )
 		{
