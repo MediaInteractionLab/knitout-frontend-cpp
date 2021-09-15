@@ -121,6 +121,10 @@ int main( int argc, char **argv )
 		{
 			k.outhook( { "A", "B", "C" } );
 		}
+		catch( std::exception & e )
+		{
+			std::cerr << "caught exception: " << e.what() << std::endl;
+		}
 		k.pause( "\tsome comment about the pause" );
 		k.comment( "a \tcomment; \n another comment;" );
 		k.comment( ";another comment" );
