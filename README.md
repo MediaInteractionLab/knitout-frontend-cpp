@@ -1,6 +1,6 @@
 # knitout-frontend-cpp
 
-A C++ wrapper for all operations supported by knitout with basic error and type checking. It is for the most parts a port of the (CMU Textiles Lab's )[https://textiles-lab.github.io/] (knitout-frontend-js)[https://github.com/textiles-lab/knitout-frontend-js]. API was kept as similar as possible, however slightly adapted wherever C++ language feaures left no other choice. Error checking is not more pedantit than the JS model, so handle with care.
+A C++ wrapper for all operations supported by knitout with basic error and type checking. It is for the most parts a port of the [CMU Textiles Lab's](https://textiles-lab.github.io/) Github repo [knitout-frontend-js](https://github.com/textiles-lab/knitout-frontend-js). API was kept as similar as possible, however slightly adapted wherever C++ language feaures left no other choice. Error checking is not more pedantit than the JS model, so handle with care.
 
 Provided samples are based on the JS samples.
 
@@ -45,6 +45,6 @@ int main( int argc, char **argv )
 }
 ```
 
-A more detailled description will follow; for the time being, check out the (JS frontend README)[https://github.com/textiles-lab/knitout-frontend-js/blob/master/README.md].
+A more detailled description will follow; for the time being, check out the [JS frontend README](https://github.com/textiles-lab/knitout-frontend-js/blob/master/README.md).
 
 See [knitout specification](https://textiles-lab.github.io/knitout/knitout.html) for further details on the knitout format.
