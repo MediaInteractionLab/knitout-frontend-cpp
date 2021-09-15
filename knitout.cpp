@@ -5,6 +5,7 @@
 
 #include "knitout.h"
 
+#include <cmath>
 #include <cctype>
 #include <fstream>
 #include <sstream>
