@@ -13,35 +13,35 @@ Very simple example rectangle:
 
 int main( int argc, char **argv )
 {
-	try
-	{
-		Knitout::Writer k( { "A", "B", "C"} );
+  try
+  {
+    Knitout::Writer k( { "A", "B", "C"} );
 
-		k.in( "B" );
+    k.in( "B" );
 
-		for( int n = 10; n >= 0; n -= 2 ) 
-			k.tuck( "-", "f", n, "B" );
+    for( int n = 10; n >= 0; n -= 2 ) 
+      k.tuck( "-", "f", n, "B" );
 
-		for( int n = 1; n <= 9; n += 2 ) 
-			k.tuck( "+", "f", n, "B" );
+    for( int n = 1; n <= 9; n += 2 ) 
+      k.tuck( "+", "f", n, "B" );
 
-		for( int r = 0; r < 10; ++r )
-		{
-			for( int n = 10; n >= 0; --n ) 
-				k.knit( "-", "f", n, "B" );
-			for( int n = 0; n <= 10; ++n ) 
-				k.knit( "+", "f", n, "B" );
-		}
+    for( int r = 0; r < 10; ++r )
+    {
+      for( int n = 10; n >= 0; --n ) 
+        k.knit( "-", "f", n, "B" );
+      for( int n = 0; n <= 10; ++n ) 
+        k.knit( "+", "f", n, "B" );
+    }
 
-		k.out( "B" );
+    k.out( "B" );
 
-		k.write( "out.k" ); //write to file
-		k.write(); //print to console
-	}
-	catch( std::exception & e )
-	{
-		std::cerr << "ERROR: caught exception: " << e.what() << std::endl;
-	}
+    k.write( "out.k" ); //write to file
+    k.write(); //print to console
+  }
+  catch( std::exception & e )
+  {
+    std::cerr << "ERROR: caught exception: " << e.what() << std::endl;
+  }
 }
 ```
 
